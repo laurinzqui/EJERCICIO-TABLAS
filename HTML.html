@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Tablas</h1> <!--Las tablas son un conjunto estructurado de datos compuesto por filas y columnas.-->
+    <div id="tablas" class="tablas">
+    <caption>Tabla de mi familia</caption> <!--representa un título descriptivo en una tabla.-->
+    <table id="integrantes" > <!--crea el elemento de tabla.-->
+        <tr> <!--representa una fila.-->
+            <th>Nombre</th> <!--representa las celdas de encabezado.-->
+            <th>Puesto</th> 
+        </tr> 
+        <tr> 
+             <td>Manu</td> <!--representa las celdas de datos.-->
+             <td>Esoposaurio</td> 
+        </tr> 
+        <tr> 
+             <td>Ulthar</td>
+             <td>Gatisauria</td> 
+        </tr> 
+    </table>
+    <table id="cosas-favoritas" >
+        <p>Cosas favoritas de cada integrante de mi familia</p><!--Representa un parrafo de descrpcion-->
+        <thead><!--esta etiqueta agrupa los elementos de la cabecera en la tabla.-->
+            <tr>
+                <th colspan="2">ACTIVIDAD FAVORITA</th><!--permite expandir las celdas de datos o de encabezados al número de columnas que deseemos que ocupe-->
+            </tr>
+        </thead>
+        <body><!--esta etiqueta agrupa los elementos de contenido en la tabla.-->
+            <td>
+                <td>Manu: Estar conmigo</td>
+                <td>Ulthar: Estar con Manu</td>
+            </td>
+        </body>
+    </table>
+    <br>
+
+<br>
+<caption> TABLA DE APODOS</caption> <!--representa un título descriptivo en una tabla.-->
+
+<p>Tabla con apodos de los integrantes de mi famiia</p>
+<table id="apodos" >
+  <thread>
+    <td>
+      <th>Manu</th>
+      <th>Ulthar</th>
+    </td>
+  </thread>
+  <body>
+    <td>
+      <td>Badu</td>
+      <td>Mushi</td>
+    </td>
+  </body>
+  <foot><!--esta etiqueta agrupa los elementos de pie en la tabla.-->
+    <td>
+      <td>Pelé</td>
+      <td>Princess</td>
+    </td>
+  </foot>
+</table>
+<p>TABLA DE SKILLS</p>
+<table id="skills" >
+  <colgroup span="4"></colgroup> <!--Para aplicar una propiedad a más de una columna no es necesario repetir la propiedad en cada elemento <col>. Lo más sencillo es aplicarle el atributo span al primer elemento <col>. Este atributo funciona igual que rowspan y colspan, es decir, nos permite expandir la influencia de <col> al número de columnas que queramos.-->
+  <tr>
+    <th>Nombre</th>
+    <th>Prueba fisica</th>
+    <th>Suavidad</th>
+    <th>Musicalidad</th>
+  </tr>
+  <tr>
+    <td>Manu</td>
+    <td>Futbol</td>
+    <td>Suave</td>
+    <td>Guitarra y composición</td>
+  </tr>
+  <tr>
+    <td>Ulthar</td>
+    <td>Super agilidad</td>
+    <td>Extra-recontra-suave</td>
+    <td>Maullidos armonisos</td>
+  </tr>
+</table>
+
+<p>TABLA DE COSAS QUE NO LE GUSTAN</p>
+<table id="no-gusta" >
+  <colgroup><!--El elemento <col> se especifica dentro de un bloque <colgroup>, justo debajo de la apertura <table>.-->
+    <col style="background-color: cyan" /> <!--Este elemento nos permite especificar propiedades de estilo para toda una columna. Sin este elemento tendríamos que especificar el estilo en cada celda <th> o <td> de la columna que queramos estilizar. -->
+    <col span="2" />
+  </colgroup>
+  <tr>
+    <th>Manu</th>
+    <th>Ulthar</th>
+  </tr>
+  <tr>
+    <td>La mañana</td>
+    <td>Truenos y extraños</td>
+ 
+  </tr>
+</table>
+
+<p>HITOS DEL ECAIPO</p>
+<table id="hitos" >
+  <caption>
+    Comer una hamburguesa de 3 kg.
+  </caption>
+  <tr>
+    <td>No salir de casa 2 meses completos, ulthar 5 años.</td>
+  </tr>
+</table>
+</div>
+<br>
+<br>
+<div align="center" style="border: 03px ridge rgb(8, 8, 8);">
+    <!--Agregar una identificación con un nombre de anclaje-->
+    <a href="#integrantes"> CONOCE AL ECAIPO </a>
+    </div><br>
+    <div align="center" style="border: 03px ridge rgb(8, 8, 8);">
+    <!--Un anclaje en una cabecera-->
+    <h4 id="apodos">Nombre de la sección</h4>
+    </div> <br>
+    <div align="center" style="border: 03px ridge rgb(8, 8, 8);">
+    <!--Anclaje en una imagen-->
+    <img id="image-G" src="./Assets/Wiil.jpg" alt="Will" title="Super Will" width="400" height="300" />
+    </div>
+    <div align="center" style="border: 03px ridge rgb(8, 8, 8);">
+    <!--anclaje en un párrafo-->
+    <p id="skills">Nombre del párrafo</p>
+    </div> <br>
+    <div align="center" style="border: 03px ridge rgb(8, 8, 8);">
+    <!--Crear un hipervínculo utilizando el identificador del objetivo del vínculo, precedido por #-->
+    <a href="#skills"> CONOCE NUESTAS SKILLS </a>
+    </div> <br>
+    <br>
+    <br>
+    <hr>
+    <!DOCTYPE html>
+<html>
+<head>
+  <title>Tabla de ingredientes</title>
+  <link rel="stylesheet" href="Tablas.css">
+</head>
+<body>
+  <h1>Receta de pastel de chocolate</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Ingrediente</th>
+        <th>Cantidad</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Harina</td>
+        <td>2 tazas</td>
+      </tr>
+      <tr>
+        <td>Azúcar</td>
+        <td>1 taza</td>
+      </tr>
+      <tr>
+        <td>Cacao en polvo</td>
+        <td>1/2 taza</td>
+      </tr>
+      <tr>
+        <td>Leche</td>
+        <td>1 taza</td>
+      </tr>
+      <tr>
+        <td>Aceite</td>
+        <td>1/2 taza</td>
+      </tr>
+      <tr>
+        <td>Huevos</td>
+        <td>2 unidades</td>
+      </tr>
+      <tr>
+        <td>Extracto de vainilla</td>
+        <td>2 cucharaditas</td>
+      </tr>
+      <tr>
+        <td>Polvo para hornear</td>
+        <td>1 cucharadita</td>
+      </tr>
+      <tr>
+        <td>Bicarbonato de sodio</td>
+        <td>1/2 cucharadita</td>
+      </tr>
+      <tr>
+        <td>Sal</td>
+        <td>1/2 cucharadita</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
+</body>
+</html>
